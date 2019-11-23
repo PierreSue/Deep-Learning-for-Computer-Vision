@@ -31,3 +31,23 @@ Remenber that you dataset should be located in "./PCA&KNN/train" as well as "./P
 3. To apply the k-nearest neighbors classifier to recognize test set images, and use such hyperparameters, k = {1, 3, 5} and n = {3, 50, 159}. Show the 3-fold cross validation results.
 
 ![KNN-results](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/PCA%26KNN/KNN-results.png)
+
+## PART2. Segmentation
+
+### Usage
+* filterBank.mat: The given .mat file contains a set of 38 filters (also known as filter
+bank). This filter bank is stored as a 49 x 49 x 38 matrix (i.e., each filter is of size 49 x
+49 pixels).
+* Images: zebra.jpg and mountain.jpg
+```
+    cd Segmentation/
+    python3 ./color_seg.py
+    python3 ./text_seg.py
+```
+### result
+1. Color segmentation
+
+2. Texture segmentation
+
+3. Combine both color and texture features (3 + 38 = 41-dimensional features) for
+image segmentation
