@@ -23,7 +23,7 @@ Remenber that you dataset should be located in "./PCA&KNN/train" as well as "./P
 
 3. To apply the k-nearest neighbors classifier to recognize test set images, and use such hyperparameters, k = {1, 3, 5} and n = {3, 50, 159}. Show the 3-fold cross validation results.
 
-<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/PCA%26KNN/KNN-results.png" width="50%" height="50%">
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/PCA%26KNN/KNN-results.png" width="70%" height="70%">
 
 ## PART2. Segmentation
 
@@ -37,7 +37,7 @@ bank). This filter bank is stored as a 49 x 49 x 38 matrix (i.e., each filter is
     python3 ./color_seg.py
     python3 ./text_seg.py
 ```
-### result
+### Results
 1. Original images
 
 <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/mountain.jpg" width="30%" height="30%"> <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/zebra.jpg" width="30%" height="30%">
@@ -59,3 +59,24 @@ Convert the color images into grayscale ones, before extracting image textural f
 image segmentation
 
 <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/combined_segmentation/Mountain.jpg" width="30%" height="30%"> <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/combined_segmentation/Zebra.jpg" width="30%" height="30%">
+
+
+## PART3. Recognition with Bag of Visual Words
+
+### Usage
+The implementation of a basic image-based bag-of-words (BoW) model for a scene image dataset with 5 categories.
+```
+    cd Recognition/
+    python3 ./interst_point_detection.py
+    python3 ./kmeans.py
+```
+
+### Results
+1. Detect interest points, calculate their descriptors for this image using SURF, and plot the interest point detection results
+
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Recognition/image/interest_point_detection.jpg" width="60%" height="60%">
+
+2. Use k-means algorithm to divide these interest points into C clusters
+Extract the detected interest points from all of the 50 images in Train-10, and stack them into a N × d matrix, where N denotes the total number of interest points and d is the dimension of its descriptor. (choose C = 50 and maximum number of iterations = 5000) The centroid of each cluster then indicates a visual word. Randomly select 6 clusters from the above results and plot the visual words and the associated interest points in this PCA subspace.
+
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Recognition/image/kmeans.jpg" width="60%" height="60%">
