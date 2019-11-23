@@ -77,6 +77,36 @@ The implementation of a basic image-based bag-of-words (BoW) model for a scene i
 <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Recognition/image/interest_point_detection.jpg" width="60%" height="60%">
 
 2. Use k-means algorithm to divide these interest points into C clusters
+
 Extract the detected interest points from all of the 50 images in Train-10, and stack them into a N × d matrix, where N denotes the total number of interest points and d is the dimension of its descriptor. (choose C = 50 and maximum number of iterations = 5000) The centroid of each cluster then indicates a visual word. Randomly select 6 clusters from the above results and plot the visual words and the associated interest points in this PCA subspace.
 
 <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Recognition/image/kmeans.jpg" width="60%" height="60%">
+
+## PART4. Semantic Segmentation
+
+### Usage
+Perform 2 semantic segmentation models, which predicts a label to each pixel with CNN models. The input is a RGB image while the output is the semantic segmentation/prediction. The models I used are the base model (VGG16-FCN32s) and the improved model(FCN8s). Before using the codes, the training/testing data and model file (vgg16_weights_tf_dim_ordering_tf_kernels.h5) are required.
+
+```
+cd Semantic-segmentation
+bash ss.sh $1 $2
+bash ss_best.sh $1 $2
+    $1: testing images directory (images are named 'xxxx_sat.jpg')
+    $2: output images directory
+python3 mean_ios_evaluate.py -g ground_truth -p prediction
+```
+I also provide my pre-trained models for both. Check [model_files](https://www.dropbox.com/s/jcq61nhlbw12to0/b04901070_hw3.zip?dl=0) .
+
+### Results
+1. Show the predicted segmentation mask from the base model.
+
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/Base.jpg" width="60%" height="60%">
+
+
+2. Show the predicted segmentation mask from the improved model.
+
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/Improved.jpg" width="60%" height="60%">
+
+3. Demonstrate the IOU accuracy.
+
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/IOU.jpg" width="60%" height="60%">
