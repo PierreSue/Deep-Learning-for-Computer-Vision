@@ -54,7 +54,7 @@ bank). This filter bank is stored as a 49 x 49 x 38 matrix (i.e., each filter is
 
 Convert both RGB images into Lab color space and plot the segmentation results for both images based on the clustering results
 
-![color-mountain](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/color_segmentation/Mountain.PNG =250x250)
+![color-mountain](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/color_segmentation/Mountain.PNG){:height="50%" width="50%"}
 ![color-zebra](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/color_segmentation/Zebra.PNG)
 
 3. Texture segmentation
