@@ -45,9 +45,27 @@ bank). This filter bank is stored as a 49 x 49 x 38 matrix (i.e., each filter is
     python3 ./text_seg.py
 ```
 ### result
-1. Color segmentation
+1. Original images
 
-2. Texture segmentation
+![original-mountain](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/mountain.jpg)
+![original-zebra](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/zebra.jpg)
 
-3. Combine both color and texture features (3 + 38 = 41-dimensional features) for
+2. Color segmentation
+
+Convert both RGB images into Lab color space and plot the segmentation results for both images based on the clustering results
+
+![color-mountain](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/color_segmentation/Mountain.jpg)
+![color-zebra](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/color_segmentation/Zebra.jpg)
+
+3. Texture segmentation
+
+Convert the color images into grayscale ones, before extracting image textural features via the provided filter bank and plot the texture segmentation results for both images.
+
+![texture-mountain](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/texture_segmentation/Mountain.jpg)
+![texture-zebra](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/texture_segmentation/Zebra.jpg)
+
+4. Combine both color and texture features (3 + 38 = 41-dimensional features) for
 image segmentation
+
+![combined-mountain](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/combined_segmentation/Mountain.jpg)
+![combined-zebra](https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/combined_segmentation/Zebra.jpg)
