@@ -100,13 +100,13 @@ I also provide my pre-trained models for both. Check [model_files](https://www.d
 ### Results
 1. Show the predicted segmentation mask from the base model.
 
-<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/Base.jpg" width="60%" height="60%">
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/Base.png" width="60%" height="60%">
 
 
 2. Show the predicted segmentation mask from the improved model.
 
-<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/Improved.jpg" width="60%" height="60%">
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/Improved.png" width="60%" height="60%">
 
 3. Demonstrate the IOU accuracy.
 
-<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/IOU.jpg" width="60%" height="60%">
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Semantic-segmentation/image/IOU.png" width="60%" height="60%">
