@@ -23,7 +23,7 @@ Remenber that you dataset should be located in "./PCA&KNN/train" as well as "./P
 
 3. To apply the k-nearest neighbors classifier to recognize test set images, and use such hyperparameters, k = {1, 3, 5} and n = {3, 50, 159}. Show the 3-fold cross validation results.
 
-<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/PCA%26KNN/KNN-results.png" width="20%" height="20%">
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/PCA%26KNN/KNN-results.png" width="50%" height="50%">
 
 ## PART2. Segmentation
 
