@@ -44,14 +44,14 @@ bank). This filter bank is stored as a 49 x 49 x 38 matrix (i.e., each filter is
 
 2. Color segmentation
 
-Convert both RGB images into Lab color space and plot the segmentation results for both images based on the clustering results
+    Convert both RGB images into Lab color space and plot the segmentation results for both images based on the clustering results
 
 <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/color_segmentation/Mountain.PNG" width="30%" height="30%"> <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/color_segmentation/Zebra.PNG" width="30%" height="30%">
 
 
 3. Texture segmentation
 
-Convert the color images into grayscale ones, before extracting image textural features via the provided filter bank and plot the texture segmentation results for both images.
+    Convert the color images into grayscale ones, before extracting image textural features via the provided filter bank and plot the texture segmentation results for both images.
 
 <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/texture_segmentation/Mountain.jpg" width="30%" height="30%"> <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/texture_segmentation/Zebra.jpg" width="30%" height="30%">
 
@@ -78,7 +78,7 @@ The implementation of a basic image-based bag-of-words (BoW) model for a scene i
 
 2. Use k-means algorithm to divide these interest points into C clusters
 
-Extract the detected interest points from all of the 50 images in Train-10, and stack them into a N × d matrix, where N denotes the total number of interest points and d is the dimension of its descriptor. (choose C = 50 and maximum number of iterations = 5000) The centroid of each cluster then indicates a visual word. Randomly select 6 clusters from the above results and plot the visual words and the associated interest points in this PCA subspace.
+    Extract the detected interest points from all of the 50 images in Train-10, and stack them into a N × d matrix, where N denotes the total number of interest points and d is the dimension of its descriptor. (choose C = 50 and maximum number of iterations = 5000) The centroid of each cluster then indicates a visual word. Randomly select 6 clusters from the above results and plot the visual words and the associated interest points in this PCA subspace.
 
 <img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Recognition/image/kmeans.jpg" width="60%" height="60%">
 
