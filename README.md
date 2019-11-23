@@ -67,5 +67,5 @@ Convert the color images into grayscale ones, before extracting image textural f
 4. Combine both color and texture features (3 + 38 = 41-dimensional features) for
 image segmentation
 
-<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/combined_segmentation/Mountain.jpg" width="50%" height="50%">
-<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/combined_segmentation/Zebra.jpg" width="50%" height="50%">
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/combined_segmentation/Mountain.jpg" width="30%" height="30%">
+<img src="https://github.com/PierreSue/Deep-Learning-for-Computer-Vision/blob/master/Segmentation/combined_segmentation/Zebra.jpg" width="30%" height="30%">
